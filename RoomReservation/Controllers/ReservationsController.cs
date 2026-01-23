@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RoomReservation.Application.Interfaces;
 using RoomReservation.Contracts.Request.Reservations;
@@ -6,6 +7,7 @@ using RoomReservation.Domain.Entities;
 
 
 namespace RoomReservation.Controllers;
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class ReservationsController:ControllerBase

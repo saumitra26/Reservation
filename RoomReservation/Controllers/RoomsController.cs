@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RoomReservation.Application.Interfaces;
 using RoomReservation.Contracts.Request.Rooms;
@@ -7,7 +8,7 @@ using RoomReservation.Domain.Entities.Enum;
 
 
 namespace RoomReservation.Controllers;
-
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 
