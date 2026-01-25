@@ -10,12 +10,12 @@ using RoomReservation.Application.Services;
 using RoomReservation.Infrastructure.Data;
 using RoomReservation.Infrastructure.Repositories;
 using RoomReservation.Infrastructure.Security;
-using RoomReservation.Middleware;
+using RoomReservation.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DefaultConnection"),b=>b.MigrationsAssembly("RoomReservation.Infrastructure")));
+        builder.Configuration.GetConnectionString("DefaultConnection"),b=>b.MigrationsAssembly("RoomReservation.Api.Infrastructure")));
 builder.Services.AddScoped<IRoomService, RoomService>();
 builder.Services.AddScoped<IReservationService, ReservationService>();
 builder.Services.AddScoped<IRoomRepository, RoomRepository > ();
@@ -29,7 +29,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         c.SwaggerDoc("v1", new OpenApiInfo
         {
-            Title = "RoomReservation API",
+            Title = "RoomReservation.Api API",
             Version = "v1"
         });
         c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

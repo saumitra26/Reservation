@@ -1,4 +1,4 @@
-namespace RoomReservation.Contracts.Responses.Reservations; 
+namespace RoomReservation.Api.Contracts.Responses.Reservations; 
 
 public class ReservationResponse
 {

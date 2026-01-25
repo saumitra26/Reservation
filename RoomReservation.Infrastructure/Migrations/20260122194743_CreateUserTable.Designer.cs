@@ -25,7 +25,7 @@ namespace RoomReservation.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("RoomReservation.Domain.Entities.Reservation", b =>
+            modelBuilder.Entity("RoomReservation.Api.Domain.Entities.Reservation", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -49,7 +49,7 @@ namespace RoomReservation.Infrastructure.Migrations
                     b.ToTable("Reservations");
                 });
 
-            modelBuilder.Entity("RoomReservation.Domain.Entities.Room", b =>
+            modelBuilder.Entity("RoomReservation.Api.Domain.Entities.Room", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -73,7 +73,7 @@ namespace RoomReservation.Infrastructure.Migrations
                     b.ToTable("Rooms");
                 });
 
-            modelBuilder.Entity("RoomReservation.Domain.Entities.UserModel", b =>
+            modelBuilder.Entity("RoomReservation.Api.Domain.Entities.UserModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -101,9 +101,9 @@ namespace RoomReservation.Infrastructure.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("RoomReservation.Domain.Entities.Reservation", b =>
+            modelBuilder.Entity("RoomReservation.Api.Domain.Entities.Reservation", b =>
                 {
-                    b.HasOne("RoomReservation.Domain.Entities.Room", "Room")
+                    b.HasOne("RoomReservation.Api.Domain.Entities.Room", "Room")
                         .WithMany("Reservations")
                         .HasForeignKey("RoomId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -112,7 +112,7 @@ namespace RoomReservation.Infrastructure.Migrations
                     b.Navigation("Room");
                 });
 
-            modelBuilder.Entity("RoomReservation.Domain.Entities.Room", b =>
+            modelBuilder.Entity("RoomReservation.Api.Domain.Entities.Room", b =>
                 {
                     b.Navigation("Reservations");
                 });

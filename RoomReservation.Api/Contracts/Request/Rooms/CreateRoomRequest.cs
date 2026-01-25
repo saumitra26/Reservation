@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-namespace RoomReservation.Contracts.Request.Rooms;
+namespace RoomReservation.Api.Contracts.Request.Rooms;
 
 public class CreateRoomRequest
 {

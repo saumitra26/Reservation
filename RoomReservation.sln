@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservation", "RoomReservation\RoomReservation.csproj", "{CF9FFC3B-A9BE-47A8-B7DE-6B13F5411B9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservation.Api", "RoomReservation.Api\RoomReservation.Api.csproj", "{CF9FFC3B-A9BE-47A8-B7DE-6B13F5411B9B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservation.Domain", "RoomReservation.Domain\RoomReservation.Domain.csproj", "{C3EC9100-1EBA-416D-9550-67179A9C5705}"
 EndProject

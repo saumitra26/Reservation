@@ -2,7 +2,8 @@
 
 using RoomReservation.Domain.Entities.Enum;
 
-namespace RoomReservation.Contracts.Responses.Rooms;
+
+namespace RoomReservation.Api.Contracts.Responses.Rooms;
 
 public class RoomResponse
 {

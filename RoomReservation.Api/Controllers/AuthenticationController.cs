@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
+using RoomReservation.Api.Contracts.Request.Authentication;
+using RoomReservation.Api.Contracts.Responses.Authentication;
 using RoomReservation.Application.Interfaces;
-using RoomReservation.Contracts.Request.Authentication;
-using RoomReservation.Contracts.Responses.Authentication;
 
-namespace RoomReservation.Controllers;
+namespace RoomReservation.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

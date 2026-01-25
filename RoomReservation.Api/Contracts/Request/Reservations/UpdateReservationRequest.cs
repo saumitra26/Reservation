@@ -1,4 +1,4 @@
-namespace RoomReservation.Contracts.Request.Reservations;
+namespace RoomReservation.Api.Contracts.Request.Reservations;
 
 public class UpdateReservationRequest
 {

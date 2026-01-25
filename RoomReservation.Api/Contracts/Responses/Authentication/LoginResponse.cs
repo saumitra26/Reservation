@@ -1,4 +1,4 @@
-namespace RoomReservation.Contracts.Responses.Authentication;
+namespace RoomReservation.Api.Contracts.Responses.Authentication;
 
 public class LoginResponse
 {

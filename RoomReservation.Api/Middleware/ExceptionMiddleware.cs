@@ -1,7 +1,7 @@
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
 
-namespace RoomReservation.Middleware;
+namespace RoomReservation.Api.Middleware;
 
 public class ExceptionMiddleware
 {
