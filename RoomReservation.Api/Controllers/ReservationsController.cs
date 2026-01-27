@@ -1,3 +1,4 @@
+using Asp.Versioning;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RoomReservation.Api.Contracts.Request.Reservations;
@@ -9,7 +10,8 @@ using RoomReservation.Domain.Entities;
 namespace RoomReservation.Api.Controllers;
 [Authorize]
 [ApiController]
-[Route("api/[controller]")]
+[ApiVersion("1.0")]
+[Route("api/v{version:apiVersion}/[controller]")]
 public class ReservationsController:ControllerBase
 {
     private readonly IReservationService _reservationService;

@@ -11,13 +11,13 @@ using RoomReservation.Domain.Entities.Enum;
 namespace RoomReservation.Api.Controllers;
 [Authorize]
 [ApiController]
-[ApiVersion("1.0")]
+[ApiVersion("2.0")]
 [Route("api/v{version:apiVersion}/[controller]")]
 
-public class RoomsController: ControllerBase
+public class RoomsControllerv2: ControllerBase
 {
- private readonly IRoomService _roomService;
-    public RoomsController( IRoomService roomService)
+    private readonly IRoomService _roomService;
+    public RoomsControllerv2( IRoomService roomService)
     {
         _roomService = roomService;
     }
@@ -32,15 +32,15 @@ public class RoomsController: ControllerBase
             Status = RoomStatus.Available
 
         };
-      var result= await _roomService.CreateAsync(room);
-      var response = new RoomResponse
-      {
-          Id = result.Id,
-          Name = result.Name,
-          Description = result.Description,
-          Status = result.Status
-      };
-      return CreatedAtAction(nameof(GetById), new { id = response.Id }, response);
+        var result= await _roomService.CreateAsync(room);
+        var response = new RoomResponse
+        {
+            Id = result.Id,
+            Name = result.Name,
+            Description = result.Description,
+            Status = result.Status
+        };
+        return CreatedAtAction(nameof(GetById), new { id = response.Id }, response);
     }
 
     [HttpGet("{id}")]
@@ -57,7 +57,6 @@ public class RoomsController: ControllerBase
             Description = result.Description,
             Status = result.Status
         };
-            return Ok(response);
+        return Ok(response);
     }
 }
-

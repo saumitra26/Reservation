@@ -1,6 +1,8 @@
+namespace RoomReservation.Identity.Api.Contracts.Request;
+
 using System.ComponentModel.DataAnnotations;
 
-namespace RoomReservation.Api.Contracts.Request.Authentication;
+
 
 public class LoginRequest
 {
