@@ -1,3 +1,4 @@
+using Asp.Versioning;
 using Microsoft.AspNetCore.Mvc;
 using RoomReservation.Identity.Api.Contracts.Request;
 using RoomReservation.Identity.Api.Contracts.Response;
@@ -6,7 +7,8 @@ using RoomReservation.Identity.Application.Models;
 
 namespace RoomReservation.Identity.Api.Controllers;
 [ApiController]
-[Route("api/[controller]")]
+[ApiVersion("1.0")]
+[Route("api/v{version:apiVersion}/[controller]")]
 public class AuthController:ControllerBase
 {
    
