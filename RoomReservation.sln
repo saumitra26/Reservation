@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservation", "RoomReservation\RoomReservation.csproj", "{CF9FFC3B-A9BE-47A8-B7DE-6B13F5411B9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservation.Api", "RoomReservation.Api\RoomReservation.Api.csproj", "{CF9FFC3B-A9BE-47A8-B7DE-6B13F5411B9B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservation.Domain", "RoomReservation.Domain\RoomReservation.Domain.csproj", "{C3EC9100-1EBA-416D-9550-67179A9C5705}"
 EndProject
@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservation.Infrastruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservation.Test", "RoomReservation.Test\RoomReservation.Test.csproj", "{B93719D0-152A-40F4-8460-825927BBFCF6}"
 
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservation.Identity", "RoomReservation.Identity\RoomReservation.Identity.csproj", "{1C807344-7982-4BDA-995A-36116B0779E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,5 +40,9 @@ Global
 		{B93719D0-152A-40F4-8460-825927BBFCF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B93719D0-152A-40F4-8460-825927BBFCF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B93719D0-152A-40F4-8460-825927BBFCF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C807344-7982-4BDA-995A-36116B0779E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C807344-7982-4BDA-995A-36116B0779E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C807344-7982-4BDA-995A-36116B0779E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C807344-7982-4BDA-995A-36116B0779E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
